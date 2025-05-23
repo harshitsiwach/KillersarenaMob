@@ -15,8 +15,8 @@ const urlsToCache = [
   'TemplateData/unity-logo-dark.png',
   'TemplateData/unity-logo-light.png',
   'TemplateData/webgl-logo.png',
-  'TemplateData/icon-192.png',
-  'TemplateData/icon-512.png'
+  'icons/icon-192.png',
+  'icons/icon-512.png'
 ];
 
 self.addEventListener('install', function(event) {
