@@ -1,6 +1,6 @@
 {
-  "name": "Killers Arena Mob",
-  "short_name": "KA Mob",
+  "name": "Killers Arena",
+  "short_name": "Killers Arena",
   "icons": [
     {
       "src": "TemplateData/icon-192.png",
@@ -16,5 +16,6 @@
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "theme_color": "#000000",
+  "orientation": "landscape"
 }
