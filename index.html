@@ -6,9 +6,8 @@
     <title>Unity Web Player | KillersArena</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="manifest" href="manifest.json">
   </head>
-<body>
+  <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -53,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/KillersArenaMob.loader.js";
+      var loaderUrl = buildUrl + "/KillersArena_Mob.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/KillersArenaMob.data",
-        frameworkUrl: buildUrl + "/KillersArenaMob.framework.js",
-        codeUrl: buildUrl + "/KillersArenaMob.wasm",
+        dataUrl: buildUrl + "/KillersArena_Mob.data",
+        frameworkUrl: buildUrl + "/KillersArena_Mob.framework.js",
+        codeUrl: buildUrl + "/KillersArena_Mob.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Rupturelabs",
         productName: "KillersArena",
@@ -116,11 +115,4 @@
 
     </script>
   </body>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js');
-      });
-    }
-  </script>
 </html>
