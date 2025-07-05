@@ -1,10 +1,10 @@
 const CACHE_NAME = 'killers-arena-mob-cache-v1';
 const urlsToCache = [
   'index.html',
-  'Build/KA-Mob.data',
-  'Build/KA-Mob.framework.js',
-  'Build/KA-Mob.loader.js',
-  'Build/KA-Mob.wasm',
+  'Build/KA_Mob.data',
+  'Build/KA_Mob.framework.js',
+  'Build/KA_Mob.loader.js',
+  'Build/KA_Mob.wasm',
   'TemplateData/favicon.ico',
   'TemplateData/fullscreen-button.png',
   'TemplateData/progress-bar-empty-dark.png',
