@@ -166,6 +166,21 @@
       navigator.serviceWorker.register('service-worker.js');
     });
   }
+
+  function enterFullscreen() {
+    var container = document.querySelector("#unity-container");
+    var tapOverlay = document.getElementById('tap-overlay');
+
+    tapOverlay.style.display = 'none';
+
+    if (container.requestFullscreen) {
+      container.requestFullscreen();
+    } else if (container.webkitRequestFullscreen) {
+      container.webkitRequestFullscreen();
+    } else if (container.msRequestFullscreen) {
+      container.msRequestFullscreen();
+    }
+  }
 </script>
 
 </html>
