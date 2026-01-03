@@ -14,3 +14,32 @@ body { padding: 0; margin: 0 }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+
+/* Mobile Orientation Overlay */
+#orientation-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: #000000; z-index: 10000;
+    display: none; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center; color: white;
+    font-family: Arial, sans-serif; font-size: 20px;
+}
+#orientation-overlay svg { width: 64px; height: 64px; margin-bottom: 20px; fill: white; animation: rotate-icon 2s infinite; }
+
+@keyframes rotate-icon {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-90deg); }
+    100% { transform: rotate(-90deg); }
+}
+
+@media screen and (orientation: portrait) {
+    #orientation-overlay { display: flex; }
+}
+
+/* Tap Overlay for Fullscreen */
+#tap-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8); z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-family: Arial, sans-serif; font-size: 24px;
+    cursor: pointer;
+}
